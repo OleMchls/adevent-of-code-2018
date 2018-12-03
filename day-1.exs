@@ -24,5 +24,5 @@ chgs =
   |> String.split("\n", trim: true)
   |> Enum.map(&String.to_integer/1)
 
-Feqs.tune(0, chgs ++ chgs)
+Feqs.tune(0, chgs)
 |> IO.inspect(label: "Step 2")
